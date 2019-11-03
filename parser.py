@@ -32,7 +32,7 @@ def parse_house():
 
         json_string = requests.get(url).text
         json_request = requests.get(url).status_code
-
+        #요청코드가 500 이면 멈춤
         if json_request == 500:
             break
 
